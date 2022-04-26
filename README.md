@@ -43,26 +43,27 @@ Agent R. We Can Conclude That The Agent's Are Alphabets. In This Case , Wen Need
 
 **Bruteforcing User-Agent With BurpSuite**
 First Open The Website And Change THe Proxy Settings To Burp , And Turn On The Intercept
-<!-- Screenshot 1 & 2 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_211829.png?token=GHSAT0AAAAAABT67VITU22MKS4E33LY5FZMYTIO3GQ)
 Reload The Website And A Request Like This Should Popup , Click On Forward
-<!-- Screenshot 3-->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_211949.png?token=GHSAT0AAAAAABT67VISKLRNBQNKKPOWB5NIYTIO4TQ)
 Move To The HTTP History And Select The Request
-<!-- ScreenShot 4 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_212106.png?token=GHSAT0AAAAAABT67VISUUHSGR22LH4YE7TMYTIO6EA)
 Now Type On THe Keyboard `CTRL+I`
-<!-- Screenshot 5 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_212231.png?token=GHSAT0AAAAAABT67VISIRAN2PD2FUJKI2WCYTIO6UQ)
 Select Positions Tab And Highlight The User-Agent Value Then Hit THe `§ADD§` Button
-<!-- Screenshot 6 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_212416.png?token=GHSAT0AAAAAABT67VISDMIBE7AZ4GMZ44PIYTIO7GQ)
 Select The Payloads Tab And Click Load Then Choose The Wordlist We've Created And Click Start Attack
-<!-- Screenshot 7 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_212634.png?token=GHSAT0AAAAAABT67VISKDVNVMKX5HWUROMAYTIO73Q)
 As We Can See In The Image Below , The User Agent Is "C" Because We Got A Different Status Code "302" Than The Other User Agents
-<!-- Screenshot 8 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_212754.png?token=GHSAT0AAAAAABT67VITL4WTGXFRZ3SFQLX2YTIPANA)
 Now Close The Intruder And Go Back TO HTTP History , Select The Request And Hit `CTRL+R` To Send To The Repeater .
-<!-- Screenshot 9 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_212844.png?token=GHSAT0AAAAAABT67VISQ7TFBZ2BTEPDRHWOYTIPBFA)
 Here Change The User Agent Value To "C" And Click Send
-<!-- Screenshot 10 & 11 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_212935.png?token=GHSAT0AAAAAABT67VITRE2NMOO4QZN66DVYYTIPBXQ)
+![](https://github.com/a-nonymou-s/Agent-Sudo/blob/main/screenshots/IMG_20220426_213008.png)
 Now Click The `Follow Redirection` Button , And We Got The Username `chris`
-<!-- Screenshot 12 & 13 -->
-
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213135.png?token=GHSAT0AAAAAABT67VITGLZ6G3TPPFGVNVFQYTIPDLQ)
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213157.png?token=GHSAT0AAAAAABT67VISLB4W3C2OKHONSCMGYTIPD6Q)
 ***What is the agent name?***
 `chris`
 
@@ -130,7 +131,7 @@ Let's See The Other Picture.
 
 `strings cutie.png`
 
-<!--Screenshot 14 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213314.png?token=GHSAT0AAAAAABT67VISXCI2S3A2KPU6FEWSYTIPEPA)
 
 So Here We Got Something Interesting . Txt Files Inside Strings Let's Extract Them Using A Tool Called `Binwalk`
 
@@ -203,8 +204,7 @@ Agent R
 ```
 We Got A Hash `QXJlYTUx` , Let's Use This Hash Analyzer To Find The Hash Type https://www.tunnelsup.com/hash-analyzer/
 
-<!-- Screenshot 15 -->
-
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213417.png?token=GHSAT0AAAAAABT67VISSFWCNCGKJMJ4YLGQYTIPFIQ)
 So It's A Base64 Hash Let's Decode IT.
 `echo "QXJlYTUx" | base64 -d`
 ```
@@ -262,11 +262,14 @@ b03d975e8c92a7c04146cfa7a5a313c7
 We Got Also An Image Called Alien_autospy.jpg. Let's Download It.
 Execute The Following Command On Your Local Machine `sudo scp james@<IP>:Alien_autospy.jpg ~/`
 Now Let's Use Google Reverse Image Search. Open https://www.google.co.ma/imghp?hl=fr&ogbl And Follow The Screenshots
-<!-- Screenshot 16 17 18 19 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213501.png?token=GHSAT0AAAAAABT67VISTA5IVR6FN74S2O5MYTIPGBQ)
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213536.png?token=GHSAT0AAAAAABT67VITHED3W4WUEV6C2D6IYTIPGSA)
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213559.png?token=GHSAT0AAAAAABT67VITG2WKNMTI7DMQ5KGWYTIPHBA)
 
 Based On The Hint The Answer Is On Foxnews Website So Let's Change The Google Search Title
 
-<!-- Screenshot 20 & 21-->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213721.png?token=GHSAT0AAAAAABT67VIT6E45FLHO44TDUNOUYTIPHPQ)
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213753.png?token=GHSAT0AAAAAABT67VISDQGKQEAPS7LFBQTIYTIPH5A)
 
 ***What is the incident of the photo called?***
 `Roswell alien autopsy`
@@ -287,7 +290,7 @@ User james may run the following commands on agent-sudo:
 ```
 Let's Search `(ALL, !root)` On Google And Find An Exploit !
 
-<!-- Screenshot 22 -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_213842.png?token=GHSAT0AAAAAABT67VISQ3HILRDJGXIV23HOYTIPINQ)
 
 ***CVE number for the escalation (Format: CVE-xxxx-xxxx)***
 `CVE-2019-14287`
