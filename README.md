@@ -33,7 +33,7 @@ Nmap done: 1 IP address (1 host up) scanned in 20.42 seconds
 
 In order to answer the third question we should check the website.
 
-<!-- Here Goes The Website Screenshot -->
+![](https://raw.githubusercontent.com/a-nonymou-s/Agent-Sudo/main/screenshots/IMG_20220426_211557.png?token=GHSAT0AAAAAABT67VITP3AXTFF2KRRFNMOQYTIOZKA)
 
 So , As We Can See There's Something Going With User-Agent Basing On Question 2, At The Bottom We Have
 Agent R. We Can Conclude That The Agent's Are Alphabets. In This Case , Wen Need To Create A A-Z Wordlist And Bruteforce The User-Agent Until We Find The Right One.
