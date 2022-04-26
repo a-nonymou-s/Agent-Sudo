@@ -39,7 +39,8 @@ So , As We Can See There's Something Going With User-Agent Basing On Question 2,
 Agent R. We Can Conclude That The Agent's Are Alphabets. In This Case , Wen Need To Create A A-Z Wordlist And Bruteforce The User-Agent Until We Find The Right One.
 
 **Generation Wordlist Using Crunch**
-`crunch 1 1 ABCDEFGHIJKLMNOPQRSTUVWXYZ -o wordlist.txt`
+`crunch 1 1 ABCDEFGHIJKLMNOPQRSTUVWXYZ -o wordlist.txt`.
+
 **Bruteforcing User-Agent With BurpSuite**
 First Open The Website And Change THe Proxy Settings To Burp , And Turn On The Intercept
 <!-- Screenshot 1 & 2 -->
